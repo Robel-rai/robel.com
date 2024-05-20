@@ -1,0 +1,264 @@
+/* Pre */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove list item styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove link underlines and hover effects */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Remove default form element styles  */
+input,
+button,
+select,
+textarea {
+  border: 1px solid #ccc;
+  font: inherit;
+  padding: 5px;
+}
+
+/* variables */
+
+:root {
+  --redish: #A0382F;
+  --blueish: #AEB4BC;
+  --yellowish: #fff1a8c9;
+  --font_para: 'Montserrat Black';
+
+}
+
+/* Animation Keyframe */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  /* Start at top position */
+  50% {
+    transform: translateY(-10px);
+  }
+
+  /* Move down 10px at midpoint */
+  100% {
+    transform: translateY(0);
+  }
+
+  /* Return to starting position */
+}
+
+/* Hero section styling */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: rgb(24, 18, 18);
+  color: white;
+}
+
+/* Navigation bar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1080;
+  margin-top: 24px;
+  margin-left: 110px;
+  margin-right: 110px;
+  border-radius: 20px;
+  background-color: var(--yellowish);
+  max-width: 1080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80%;
+  z-index: 100;
+}
+
+.logo {
+  flex-grow: 0;
+  font-family: 'Montserrat Black';
+  font-size: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 30px;
+  font-family: 'Montserrat';
+}
+
+.nav-links li {
+  margin-right: 1rem;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 120px;
+  width: 85%;
+}
+
+.hero_sec {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+}
+
+.hero_text {
+  margin-top: 100px;
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: 'Montserrat Black';
+  font-size: 84px;
+}
+
+p {
+  margin: 15px 0px;
+  font-family: 'Montserrat regular';
+  font-size: 35px;
+  font-weight: 10000;
+}
+
+img {
+  max-width: 706px;
+  max-height: 706px;
+}
+
+.hero_img {
+  animation: bounce 2s ease-in-out infinite;
+  border-width: 10px;
+  border-color: aliceblue;
+  transition: 1s;
+}
+
+.hero_img:hover {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+samp {
+  font-family: 'Montserrat Black';
+  color: var(--redish);
+}
+
+button {
+  color: aliceblue;
+  font-family: var(--font_para);
+  margin: 15px 16px 0px 0px;
+  width: 200px;
+  font-size: 32px;
+  border-radius: 10px;
+  transition: 200ms;
+}
+
+
+.main_btn {
+  background-color: var(--redish);
+  border-width: 0px;
+}
+
+.sub_btn {
+  background-color: #00000000;
+  border-color: var(--redish);
+  color: #ffffff;
+  border-width: medium;
+}
+
+button:hover {
+  background-color: var(--yellowish);
+  width: 230px;
+  height: 57px;
+  transition: 300ms;
+  color: #000000;
+  border-color: #00000000;
+}
+
+button:active {
+  background-color: var(--redish);
+  color: wheat;
+}
+
+/* scroll bar*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f100;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 80px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--redish);
+}
+
+/* 2 Section*/
+
+h2 {
+  font-family: "Montserrat black";
+  font-size: 50px;
+  text-align: center;
+}
+
+.sec2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.work_img {
+  border-radius: 10px;
+  border-width: 10px;
+}
+
+/* Responsive Element*/
+
+@media (max-width: 1000px) {
+  .hero_sec {
+    margin: 10px;
+    flex-direction: column;
+  }
+
+  .hero_text {
+    align-items: center;
+  }
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #777;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #000000;
+  transition: 1000ms;
+}
