@@ -122,7 +122,7 @@ section {
 .hero_sec {
   margin: auto;
   display: flex;
-  justify-content: left;
+  justify-content: center;
   flex-direction: row;
   width: 85%;
 }
@@ -234,9 +234,64 @@ h2 {
   text-align: center;
 }
 
-.work {
-
+.works {
+  display: flex;
+  flex-direction: row;
+  
 }
+
+.card {
+  /* Add shadows to create the "card" effect */
+  background-color: #777;
+  transition: 0.3s;
+  border-radius: 40px;
+  margin: 10px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 #ffffff33;
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Element*/
 
