@@ -39,6 +39,21 @@ textarea {
 
 /* Animation Keyframe */
 
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes bgcolorChange {
+  0% { background-color: var(--redish) }
+  50% {background-color: var(--blueish); }
+  100% { background-color: var(--yellowish); }
+}
+@keyframes colorChange {
+  0% { bacolor: var(--redish) }
+  50% {color: var(--blueish); }
+  100% { color: var(--yellowish); }
+}
+
 @keyframes bounce {
   0% {
     transform: translateY(0);
@@ -63,7 +78,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #181212;
+  background-color: #1f1f1f;
   color: white;
 }
 
@@ -160,7 +175,7 @@ img {
   animation: bounce 0.7s ease-in-out infinite;
 }
 
-samp {
+.subheading {
   font-family: 'Montserrat Black';
   color: var(--redish);
 }
@@ -229,6 +244,8 @@ button:active {
 /* 2 Section*/
 
 h2 {
+  border-top: var(--yellowish) dashed 1px;
+  padding-top: 24px;
   font-family: "Montserrat black";
   font-size: 50px;
   text-align: center;
@@ -237,20 +254,24 @@ h2 {
 .works {
   display: flex;
   flex-direction: row;
+  margin-top: 10px;
   
 }
 
 .card {
   /* Add shadows to create the "card" effect */
-  background-color: #777;
-  transition: 0.3s;
-  border-radius: 40px;
+  background-color: #272727;
+  transition: 1s;
+  border-radius: 10px;
   margin: 10px;
+  width: 30%;
 }
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 #ffffff33;
+  justify-content: center;
+  width: 35%;
+
 }
 
 /* Add some padding inside the card container */
@@ -263,33 +284,75 @@ h2 {
 
 
 
+/* Footer */
 
+.footer_cont{
+  padding: 40px 108px;
+  background: linear-gradient( 286deg, var(--yellowish) 12%,  var(--redish) 90% );
+  margin: 60px;
+  border-radius: 32px;
+}
 
+.footer_sec {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
 
+.footer_head {
+  border: 0px;
+  text-align: left;
+}
 
+.footer_desc {
+  max-width: 451px;
+  align-items: left;
+}
 
+.btn {
+  background-color: #212700;
+  padding: 10px;
+  width: 180px;
+  border-radius: 40px;
+  text-align: center;
+}
 
+.btn :hover {
+  animation: colorChange 1s ease-in-out infinite alternate;
+}
 
+.btn a:first-child {
+  color: white;
+}
 
+.animationed {
+  animation: colorChange 2s ease-in-out infinite alternate;
+  font-family: "Montserrat";
+  font-weight: bold;
 
+}
 
+.footer_nav {
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.footer_nav samp{
+  font-size: 32px;
+  font-family: 'Montserrat';
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.Social_icons {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin: 10px;
+  padding: 0px;
+  gap: 10px;
+}
 
 
 
@@ -309,7 +372,7 @@ h2 {
 /* Link styling */
 a {
   text-decoration: none;
-  color: #777;
+  color: #001e3b;
   font-weight: bold;
 }
 
